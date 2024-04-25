@@ -1,0 +1,35 @@
+<html>
+<body>
+<form action="{{url_for('predict_datapoint')}}" method="POST">
+    <div class="form-group">
+        <label for="step">step:</label>
+        <input type="text" id="step" name="step" placeholder="Enter step value (float)">
+    </div>
+
+    <div class="form-group">
+        <label for="depth">amount:</label>
+        <input type="text" id="amount" name="amount" placeholder="Enter amount value (float)">
+    </div>
+
+    <div class="form-group">  
+        <label for="table">newbalanceOrig:</label>
+        <input type="text" id="newbalanceOrig" name="newbalanceOrig" placeholder="Enter newbalanceOrig value (float)">
+    </div>
+    
+    <div class="form-group">
+        <label for="x">newbalanceDest:</label>
+        <input type="text" id="newbalanceDest" name="newbalanceDest" placeholder="Enter newbalanceDest value (float)">
+    </div>
+  
+    <div class="form-group">
+        <label for="y">isFlaggedFraud:</label>
+        <input type="text" id="isFlaggedFraud" name="isFlaggedFraud" placeholder="Enter isFlaggedFraud value (float)">
+    </div>
+
+    <div style="clear:both;"></div>
+  <input type="submit" value="Submit">
+</form>
+
+{{final_result}}
+</body>
+</html>
